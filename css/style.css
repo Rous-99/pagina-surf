@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root{
+    --main-color:#212121;
+    --button-color: #fedb3f;
+    --cyan-color:#28d0ca;
+    --white-color:#ffffff;
+    --grey-color: #979797;
+    --header-text:'Roboto', sans-serif;
+    --main-text:'Roboto Slab', serif;
+    --font-size:18px;
+
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: var(--font-size);
+    font-family: var(--main-text);
+    font-weight: 400;
+}
+
+.background{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    /* background-color: red; */
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.hero{
+    /* background-color:#979797; */
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__nav{
+    display: none;
+}
+
+.container__school{
+    /* background-color: #fedb3f; */
+    height: 500px;
+}
+
+.ad{
+    background-image:url(../img/foto-main.jpg);
+    max-height: 100%;
+    background-position:20%;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.ad__info{
+    height: inherit;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.ad__button{
+    color: var(--main-color);
+    background-color: var(--button-color);
+    border: none;
+    border-radius: .4rem;
+    padding: .4rem;
+    font-family: var(--main-text);
+}
+
+.ad__slogan{
+    width: 100%;
+    color: var(--white-color);
+    background-color: var(--cyan-color);
+    padding: .7rem;
+    font-family: var(--header-text);
+}
+
+.info__activities{
+    /* background-color: #fedb3f; */
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.info__title{
+    text-transform: uppercase;
+    font-family: var(--header-text);
+    color: var(--main-color);
+    font-size: 2rem;
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+}
+
+.info__paragraph{
+    padding: 1rem;
+    text-align: justify;
+}
+
+.container__classes{
+    width: 90%;
+    margin: 0 auto;
+    /* background-color: green; */
+}
+
+.info__types{
+    display: grid;
+    grid-template-columns: repeat(1,minmax(100px,1fr));
+    grid-template-rows: repeat(6,250px);
+    gap:1rem;
+}
+
+.info__surf{
+    background-image: url(../img/surf-2-photo.jpg);
+}
+
+.info__catamaran{
+    background-image: url(../img/catamaran-2-photo.jpg);
+}
+
+.info__paddlesurf{
+    background-image: url(../img/paddlesurf-2-photo.jpg);
+}
+
+.info__windsurf{
+    background-image: url(../img/windsurf-3-photo.jpg);
+}
+
+.info__kayak{
+    background-image: url(../img/kayak-2-photo.jpg);
+}
+
+.info__kitesurf{
+    background-image: url(../img/kitesurf-2-photo.jpg);
+}
+
+.title__link{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 2.3rem;
+}
+
+.title__link:hover{
+    color:var(--main-color);
+}
+
+.info__experiencias{
+    /* background-color: aquamarine; */
+    height: 400px;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    text-align: center;
+    font-family: var(--header-text);
+    color: var(--main-color);
+}
+
+.footer{
+    height: 200px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: var(--cyan-color);
+    text-align: center;
+    color: var(--white-color);
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center; */
+}
+
+.footer__name{
+    margin-top: .5rem;
+}
+
+.footer__correo{
+    margin-top: .7rem;
+    margin-bottom: .7rem;
+}
+
+.footer__correo:hover{
+    color: var(--main-color); 
+}
+
+
+.footer__info{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(40px,1fr));
+    grid-template-rows: 1;
+    gap:.5rem;
+    font-size: 1rem;
+}
+
+.politics__link{
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.politics__link:hover{
+    color: var(--main-color);
+}
+
+.icon__whatsapp:hover{
+    filter: invert(70%) sepia(2%) saturate(23%) hue-rotate(352deg) brightness(88%) contrast(78%);
+}
+
+.icon__instagram:hover{
+    filter: invert(70%) sepia(2%) saturate(23%) hue-rotate(352deg) brightness(88%) contrast(78%);
+}
+
+.icon__twitter:hover{
+    filter: invert(70%) sepia(2%) saturate(23%) hue-rotate(352deg) brightness(88%) contrast(78%);
+}
+
+.icon__youtube:hover{
+    filter: invert(70%) sepia(2%) saturate(23%) hue-rotate(352deg) brightness(88%) contrast(78%);
+}
