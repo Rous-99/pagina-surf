@@ -7,6 +7,7 @@
     --cyan-fuerte-color: #189392;
     --white-color:#ffffff;
     --grey-color: #979797;
+    --nav-background:#FFF5F5;
     --header-text:'Roboto', sans-serif;
     --main-text:'Roboto Slab', serif;
 
@@ -51,7 +52,7 @@ body{
 }
 
 .nav{
-    /* background-color: red; */
+    background-color:var(--nav-background);
     width:100%;
     height: inherit;
     display: flex;
@@ -87,7 +88,7 @@ body{
     height: fit-content;
     position: fixed;
     right:0;
-    top: 100px;
+    top: 90px;
     background-color: var(--cyan-color);
     padding: 1rem;
     text-align: center;
@@ -114,7 +115,6 @@ body{
 
 .container__school{
     /* background-color: #fedb3f; */
-    margin-top: .7rem;
     height: 500px;
 }
 
