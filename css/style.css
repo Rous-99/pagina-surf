@@ -327,6 +327,7 @@ body{
         height: 120px;
     }
     .nav{
+        width: 100%;
         display: flex;
         justify-content: space-between;
         padding:1rem;
