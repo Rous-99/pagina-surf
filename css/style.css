@@ -4,6 +4,7 @@
     --main-color:#212121;
     --button-color: #fedb3f;
     --cyan-color:#28d0ca;
+    --cyan-fuerte-color: #189392;
     --white-color:#ffffff;
     --grey-color: #979797;
     --header-text:'Roboto', sans-serif;
@@ -43,79 +44,77 @@ body{
 
 .hero{
     /* background-color: #fedb3f; */
-    height: 10%;
-    max-width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:space-between;
-    padding: 1rem;
-    align-items: center;
-}
-
-.hero__name{
-    display: flex;
-    align-items: center;
-    /* background-color: #fedb3f; */
-    font-size:2rem;
-    text-transform: uppercase;
-    color: var(--cyan-color);
-    font-weight: 900;
-}
-
-.hero__nav{
+    height: 90px;
+    /* position: fixed; */
     width: 100%;
+    padding-bottom: .7rem;
 }
 
-.hero__button{
-    border: none;
-    background: none;
-    cursor: pointer;
-}
-
-.nav__ul{
-    /* background-color: #979797; */
-    margin: 0 auto;
+.nav{
+    /* background-color: red; */
+    width:100%;
+    height: inherit;
     display: flex;
-    flex-flow: row nowrap;
-    align-items:center;
-    flex-direction: column;
-    position: fixed;
-    width: 30%;
-    background-color:var(--cyan-color);
-    opacity: 90%;
-    top:90px;
-    left:70%;
-    /*AÑADIR LA TRANSICION SI QUEREMOS*/
-    transition: all .5s;
-    /* transform:rotate(120deg) */
+    justify-content:space-between;
+    align-items: center;
+    padding:1rem;
 }
 
 .no-activo{
     display: none;
 }
 
-.nav__li{
-    list-style:none;
-    font-size: 1.3rem;
+.nav__name{
+    margin-top: 1rem;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* background-color: gray; */
+    font-size:1.5rem;
     text-transform: uppercase;
-    margin: 1rem 0;
-    display: block;
+    color: var(--cyan-fuerte-color);
+    font-weight: 900;
 }
 
-.nav__link{
+.nav__button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.nav__ul{
+    height: fit-content;
+    position: fixed;
+    right:0;
+    top: 100px;
+    background-color: var(--cyan-color);
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav__ul_li{
+    list-style: none;
+    font-size: 1.3rem;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.nav__ul__link{
     text-decoration: none;
     color: var(--white-color);
     font-weight: 600;
-    transition: 0.7s ease;
 }
 
-.nav__link:hover{
+
+
+.nav__ul__link:hover{
     color: var(--main-color);
 }
 
-
 .container__school{
     /* background-color: #fedb3f; */
+    margin-top: .7rem;
     height: 500px;
 }
 
@@ -325,50 +324,52 @@ body{
 @media (min-width:1024px) {
 
     .hero{
-        /* background-color: #fedb3f; */
-        max-width: 100%;
-        height: 400px;
-        flex-direction:row;
-        justify-content:space-evenly;
-        align-items: center;
+        height: 120px;
     }
-
-    .hero__name{
-        background-color: #979797;
-        font-size: 1.7rem;
-        width: max-content;
-        text-align: center;
-    }
-
-    .hero__nav{
-        display: inline;
-        max-width: 50%;
-    }
-    .nav__ul{
-        background-color:red;
-        width: 70%;
-        /* margin: 0 auto; */
+    .nav{
         display: flex;
-        position:relative;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        gap: 2rem;
+        justify-content: space-between;
+        padding:1rem;
     }
-
-    .nav__li{
-        
-        background-color: green;
+    
+    .nav__name{
+        font-size: 1.7rem;
     }
-
-    .nav__link{
+    
+    .nav__button{
+       display: none;
+    }
+    
+    .nav__ul{
+      background-color: transparent;
+      position: relative;
+      display: flex;
+      top:8px;
+    }
+    
+    .nav__ul__link{
         color: var(--cyan-color);
-        font-size: 1.5rem;
+        position: relative;
+        font-size:1.5rem;
     }
 
-    .hero__button{
-        display: none;
+    .nav__ul__link:after{
+        content: "";
+        width: 0;
+        height: 4px;
+        background-color: var(--cyan-fuerte-color);
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        transition: all .5s;
+        will-change: width;
     }
+
+    .nav__ul__link:hover:after{
+        width: 100%;
+        right: 0;
+    }
+    
 
     .info__types{
         display: grid;
