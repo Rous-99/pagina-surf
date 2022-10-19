@@ -76,6 +76,8 @@ body{
     text-transform: uppercase;
     color: var(--cyan-fuerte-color);
     font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .nav__button{
@@ -86,7 +88,7 @@ body{
 
 .nav__ul{
     height: fit-content;
-    position: fixed;
+    position: absolute;
     right:0;
     top: 90px;
     background-color: var(--cyan-color);

@@ -76,6 +76,8 @@ body{
     text-transform: uppercase;
     color: var(--cyan-fuerte-color);
     font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .nav__button{
@@ -86,7 +88,7 @@ body{
 
 .nav__ul{
     height: fit-content;
-    position: fixed;
+    position: absolute;
     right:0;
     top: 90px;
     background-color: var(--cyan-color);
@@ -119,6 +121,7 @@ body{
     width: 100%;
     min-width: 200px;
     background-image: url(../img/surf-page.jpg);
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -173,8 +176,60 @@ body{
 }
 
 .surf__prices{
-    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 1rem;
+    /* background-color: var(--nav-background); */
 }
+
+.info__materials{
+    width: 100%;
+    margin-top: 3rem;
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.info__paragraph{
+    text-align:center;
+    width: 96%;
+    padding: 1rem;
+}
+
+
+.info__types{
+    background-color: #189392;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 90%;
+    margin: 0 auto;
+    /* display: grid;
+    background-color: #189392;
+    grid-template-columns: repeat(2,minmax(100px,1fr));
+    grid-template-rows: repeat(3,300px);
+    gap:1rem;
+    width: 100%; */
+}
+
+.title__link{
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.info__alquiler{
+    background-color: #fedb3f;
+}
+
+.alquiler__horas{
+    list-style: none;
+    text-align: center;
+    font-family: var(--main-text);
+    font-size: 1.2rem;
+}
+
 @media (min-width:1024px) {
 
     .hero{
@@ -249,4 +304,12 @@ body{
     .surf__info{
         grid-column: 2/3;
     }
+
+    .info__types{
+        display: grid;
+        grid-template-columns: repeat(3,minmax(100px,1fr));
+        grid-template-rows: repeat(2,250px);
+        gap:1rem;
+    }
+    
 } 
