@@ -60,35 +60,35 @@
                         <label for="form__class" class="form__label">Selecciona la clase</label>
                         <select class="form__inputs" name="form__class" id="form__class">
                             <optgroup label="Surf / Catamarán / Paddle Surf /Windsurf">
-                                <option class="form__options" value="">1 día</option>
-                                <option class="form__options" value="">2 días</option>
-                                <option class="form__options" value="">3 días</option>
-                                <option class="form__options" value="">5 días</option>
+                                <option class="form__options" value="1d">1 día</option>
+                                <option class="form__options" value="2d">2 días</option>
+                                <option class="form__options" value="3d">3 días</option>
+                                <option class="form__options" value="5d">5 días</option>
                             </optgroup>
                             <optgroup label="Kayak">
-                                <option class="form__options" value="">1 hora</option>
-                                <option class="form__options" value="">2 horas</option>
-                                <option class="form__options" value="">3 horas</option>
-                                <option class="form__options" value="">4 horas</option>
+                                <option class="form__options" value="1h">1 hora</option>
+                                <option class="form__options" value="2h">2 horas</option>
+                                <option class="form__options" value="3h">3 horas</option>
+                                <option class="form__options" value="4h">4 horas</option>
                             </optgroup>
                             <optgroup label="Kitesurf">
-                                <option class="form__options" value="">Grupal - 1 día</option>
-                                <option class="form__options" value="">Grupal - 4 días</option>
-                                <option class="form__options" value="">Individual - 1 día</option>
-                                <option class="form__options" value="">Individual - 4 días</option>
+                                <option class="form__options" value="1dg">Grupal - 1 día</option>
+                                <option class="form__options" value="4dg">Grupal - 4 días</option>
+                                <option class="form__options" value="1di">Individual - 1 día</option>
+                                <option class="form__options" value="4di">Individual - 4 días</option>
                             </optgroup>
                         </select>
                         <label  class="form__label" for="form__person"
                         ">Nº de personas (máx 8)</label>
                         <select class="form__inputs form__inputs--select" name="form__person" id="form__person">
-                            <option class="form__options" value="">1</option>
-                            <option  class="form__options" value="">2</option>
-                            <option  class="form__options" value="">3</option>
-                            <option  class="form__options" value="">4</option>
-                            <option  class="form__options" value="">5</option>
-                            <option  class="form__options" value="">6</option>
-                            <option  class="form__options" value="">7</option>
-                            <option  class="form__options" value="">8</option>
+                            <option class="form__options" value="1">1</option>
+                            <option  class="form__options" value="2">2</option>
+                            <option  class="form__options" value="3">3</option>
+                            <option  class="form__options" value="4">4</option>
+                            <option  class="form__options" value="5">5</option>
+                            <option  class="form__options" value="6">6</option>
+                            <option  class="form__options" value="7">7</option>
+                            <option  class="form__options" value="8">8</option>
                         </select>
                         <label  class="form__label" for="dia__reserva"
                         >Día</label>
@@ -111,7 +111,7 @@
                     <div class="form__pago">
                         <label for="total__pago" class="form__label">Total a pagar:</label>
                         <p class="input__pago" id="total__pago"></p>
-                        <button class="calculo__pago">Calcular</button>
+                        <button class="calculo__pago" onclick="calcular__pago()">Calcular</button>
                     </div>
                     <!-- </section>
                     <section class="info__alquiler background">
