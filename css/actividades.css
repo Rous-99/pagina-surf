@@ -289,12 +289,13 @@ body{
 .form__reservas{
     margin: 0 auto;
     width: 700px;
-    height: 500px;
+    height: max-content;
     background-color:var(--nav-background);
     /* outline: px solid var(--grey-color); */
     display: flex;
     flex-direction: column;
     box-shadow: 7px 13px 37px var(--grey-color);
+    text-align: center;
 }
 
 .form__inputs{
@@ -310,10 +311,17 @@ body{
     text-align: center;
 }
 
+/* .form__inputs--select{
+    z-index: 1;
+    background-image: url(../img/icons/arrow-option.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-size: 64px;
+
+} */
+
 .form__button{
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 2rem auto;
     width: 80%;
     background-color: var(--cyan-fuerte-color);
     border: none;
@@ -322,6 +330,29 @@ body{
     font-size: 1.2rem;
     cursor: pointer;
 }
+
+.form__label{
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.form__pago{
+    margin: 1.5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+    text-align: center;
+}
+
+.input__pago{
+    border: 2px solid var(--cyan-fuerte-color);
+    width: 150px;
+    border-radius: 4px;
+    padding: .5rem;
+
 
 @media (min-width:1024px) {
 
