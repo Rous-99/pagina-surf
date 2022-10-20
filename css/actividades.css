@@ -22,7 +22,7 @@
 .background{
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size:cover;
     opacity: 0.8;
     display: flex;
     flex-direction: column;
@@ -115,23 +115,41 @@ body{
 }
 
 
-.surf__container{
+.act__container{
     /* background-color: red; */
-    height:500px;
+    min-height:600px;
     width: 100%;
-    min-width: 200px;
     background-image: url(../img/surf-page.jpg);
     margin-bottom: 1rem;
 }
 
-.surf__class{
+.act__container--cata{
+    background-image: url(../img/catamaran-section-photo.jpg);
+}
+
+.act__container--pad{
+    background-image: url(../img/paddlesurf-section-photo.jpg);
+}
+
+.act__container--win{
+    background-image: url(../img/windsurf-section-photo.jpg);
+}
+
+.act__container--kay{
+    background-image: url(../img/kayak-section-photo.jpg);
+}
+
+.act__container--kit{
+    background-image: url(../img/kitesurf-section-photo.jpg);
+}
+.act__class{
     /* background-color: #fedb3f; */
     display: flex;
     flex-direction: column;
     text-align: center;
 }
 
-.surf__title{
+.act__title{
     font-family: var(--header-text);
     text-transform: uppercase;
     font-size: 2.5rem;
@@ -140,11 +158,11 @@ body{
     letter-spacing: .3rem;
 }
 
-.surf__info{
+.act__info{
     margin-top: 1.5rem;
 }
 
-.surf__intro{
+.act__intro{
     text-transform: uppercase;
     font-weight: 600;
     padding: 1rem;
@@ -152,7 +170,7 @@ body{
     letter-spacing: .2rem;
 }
 
-.surf__info__ul{
+.act__info__ul{
     /* text-transform: uppercase; */
     height: max-content;
     letter-spacing: .2rem;
@@ -166,17 +184,18 @@ body{
     padding: 1rem;
 }
 
-.surf__info__li{
+.act__info__li{
     padding: 1rem;
 }
-.surf__paragraph{
+.act__paragraph{
     padding: .5rem;
     font-weight:900;
 }
 
-.surf__prices{
+.act__prices{
     margin-left: 2rem;
     margin-right: 1rem;
+    margin-bottom: 2rem;
 }
 
 .info__materials{
@@ -240,6 +259,17 @@ body{
    font-weight: 400;
    color:black;
    font-weight: bold;
+}
+
+.material__link{
+    /* background-color: #fedb3f; */
+    padding: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .3rem;
+    color: var(--cyan-fuerte-color);
+    text-align: center;
 }
 
 
