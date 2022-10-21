@@ -18,17 +18,16 @@
                 </button>
                 <ul class="nav__ul no-activo">
                     <li class="nav__ul_li"><a href="../index.html" class="nav__ul__link">Inicio</a></li>
-                    <li class="nav__ul_li"><a href="" class="nav__ul__link">Reservas</a></li>
+                    <li class="nav__ul_li"><a href="./reservas.html" class="nav__ul__link">Reservas</a></li>
                     <li class="nav__ul_li"><a href="" class="nav__ul__link">Actividades</a></li>
                     <li class="nav__ul_li"><a href="./alquiler.html" class="nav__ul__link">Alquiler</a></li>
-                    <li class="nav__ul_li"><a href="#" class="nav__ul__link">Ubicación</a></li>
                 </ul>
             </nav>
         </header>
         <article class="info__materials">
                 <h2 class="act__title">Realiza tu reserva</h2>
                 <p class="info__paragraph">Para cualquier duda ponte en contacto a través de nuestro correo <em>seaschool@gmail.com</em></p>
-                <article class="info__types">
+                <article class="info__reservas">
                     <section class="info__alquiler info__alquiler--clases background">
                         <h3 class="title__link">Horario de la escuela</h3>
                         <ul class="alquiler__horas">
@@ -40,79 +39,83 @@
                             <li class="alquiler__li">16:00 / 19:00</li>
                         </ul>
                     </section>
-                    <form action="" class="form__reservas">
-                        <h3 class="title__link title__link--form">Formulario de reserva</h3>
-                        <label  class="form__label" for="nombre"
-                        >Nombre</label>
-                        <input class="form__inputs" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
-                        <label  class="form__label" for="form__correo">Correo electrónico</label>
-                        <input class="form__inputs" type="email" name="correo" id="correo" placeholder="Ingresa tu correo">
-                        <label  class="form__label" for="form__select
-                        ">Selecciona la actividad</label>
-                        <select class="form__inputs form__inputs--select" name="form__select" id="form__select" onchange="obtener__actividad()">
-                            <option class="form__options" value="surf">Surf</option>
-                            <option  class="form__options" value="cata">Catamarán</option>
-                            <option  class="form__options" value="paddle">Paddle Surf</option>
-                            <option  class="form__options" value="wind">Windsurf</option>
-                            <option  class="form__options" value="kayak">Kayak</option>
-                            <option  class="form__options" value="kite">Kitesurf</option>
-                        </select>
-                        <label for="form__class" class="form__label">Selecciona la clase</label>
-                        <select class="form__inputs" name="form__class" id="form__class">
-                            <optgroup label="Surf / Catamarán / Paddle Surf /Windsurf">
-                                <option class="form__options" value="1d">1 día</option>
-                                <option class="form__options" value="2d">2 días</option>
-                                <option class="form__options" value="3d">3 días</option>
-                                <option class="form__options" value="5d">5 días</option>
-                            </optgroup>
-                            <optgroup label="Kayak">
-                                <option class="form__options" value="1h">1 hora</option>
-                                <option class="form__options" value="2h">2 horas</option>
-                                <option class="form__options" value="3h">3 horas</option>
-                                <option class="form__options" value="4h">4 horas</option>
-                            </optgroup>
-                            <optgroup label="Kitesurf">
-                                <option class="form__options" value="1dg">Grupal - 1 día</option>
-                                <option class="form__options" value="4dg">Grupal - 4 días</option>
-                                <option class="form__options" value="1di">Individual - 1 día</option>
-                                <option class="form__options" value="4di">Individual - 4 días</option>
-                            </optgroup>
-                        </select>
-                        <label  class="form__label" for="form__person"
-                        ">Nº de personas (máx 8)</label>
-                        <select class="form__inputs form__inputs--select" name="form__person" id="form__person">
-                            <option class="form__options" value="1">1</option>
-                            <option  class="form__options" value="2">2</option>
-                            <option  class="form__options" value="3">3</option>
-                            <option  class="form__options" value="4">4</option>
-                            <option  class="form__options" value="5">5</option>
-                            <option  class="form__options" value="6">6</option>
-                            <option  class="form__options" value="7">7</option>
-                            <option  class="form__options" value="8">8</option>
-                        </select>
-                        <label  class="form__label" for="dia__reserva"
-                        >Día</label>
-                        <input class="form__inputs" type="date" name="dia__reserva" id="dia__reserva">
-                        <label  class="form__label" for="form__hora"
-                        >Selecciona la hora</label>
-                        <select class="form__inputs form__inputs--select" name="form__hora" id="form__hora">
-                            <option class="form__options" value="">9:30</option>
-                            <option  class="form__options" value="">10:30</option>
-                            <option  class="form__options" value="">11:30</option>
-                            <option  class="form__options" value="">12:30</option>
-                            <option  class="form__options" value="">13:30</option>
-                            <option  class="form__options" value="">16:00</option>
-                            <option  class="form__options" value="">17:00</option>
-                            <option  class="form__options" value="">18:00</option>
-                            <option  class="form__options" value="">19:00</option>
-                        </select>
-                        <input class="form__button" type="submit" value="Enviar">
-                    </form>
-                    <div class="form__pago">
-                        <label for="total__pago" class="form__label">Total a pagar:</label>
-                        <p class="input__pago" id="total__pago"></p>
-                        <button class="calculo__pago" onclick="calcular__pago()">Calcular</button>
+                    <div class="form__container">
+                        <form action="" class="form__reservas">
+                            <h3 class="title__link title__link--form">Formulario de reserva</h3>
+                            <label  class="form__label" for="nombre"
+                            >Nombre</label>
+                            <input class="form__inputs" type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+                            <label  class="form__label" for="form__correo">Correo electrónico</label>
+                            <input class="form__inputs" type="email" name="correo" id="correo" placeholder="Ingresa tu correo">
+                            <label  class="form__label" for="form__select
+                            ">Selecciona la actividad</label>
+                            <select class="form__inputs form__inputs--select" name="form__select" id="form__select" onchange="obtener__actividad()">
+                                <option class="form__options" value="surf">Surf</option>
+                                <option  class="form__options" value="cata">Catamarán</option>
+                                <option  class="form__options" value="paddle">Paddle Surf</option>
+                                <option  class="form__options" value="wind">Windsurf</option>
+                                <option  class="form__options" value="kayak">Kayak</option>
+                                <option  class="form__options" value="kite">Kitesurf</option>
+                            </select>
+                            <label for="form__class" class="form__label">Selecciona la clase</label>
+                            <select class="form__inputs" name="form__class" id="form__class">
+                                <optgroup label="Surf / Catamarán / Paddle Surf /Windsurf">
+                                    <option class="form__options" value="1d">1 día</option>
+                                    <option class="form__options" value="2d">2 días</option>
+                                    <option class="form__options" value="3d">3 días</option>
+                                    <option class="form__options" value="5d">5 días</option>
+                                </optgroup>
+                                <optgroup label="Kayak">
+                                    <option class="form__options" value="1h">1 hora</option>
+                                    <option class="form__options" value="2h">2 horas</option>
+                                    <option class="form__options" value="3h">3 horas</option>
+                                    <option class="form__options" value="4h">4 horas</option>
+                                </optgroup>
+                                <optgroup label="Kitesurf">
+                                    <option class="form__options" value="1dg">Grupal - 1 día</option>
+                                    <option class="form__options" value="4dg">Grupal - 4 días</option>
+                                    <option class="form__options" value="1di">Individual - 1 día</option>
+                                    <option class="form__options" value="4di">Individual - 4 días</option>
+                                </optgroup>
+                            </select>
+                            <label  class="form__label" for="form__person"
+                            ">Nº de personas (máx 8)</label>
+                            <select class="form__inputs form__inputs--select" name="form__person" id="form__person">
+                                <option class="form__options" value="1">1</option>
+                                <option  class="form__options" value="2">2</option>
+                                <option  class="form__options" value="3">3</option>
+                                <option  class="form__options" value="4">4</option>
+                                <option  class="form__options" value="5">5</option>
+                                <option  class="form__options" value="6">6</option>
+                                <option  class="form__options" value="7">7</option>
+                                <option  class="form__options" value="8">8</option>
+                            </select>
+                            <label  class="form__label" for="dia__reserva"
+                            >Día</label>
+                            <input class="form__inputs" type="date" name="dia__reserva" id="dia__reserva">
+                            <label  class="form__label" for="form__hora"
+                            >Selecciona la hora</label>
+                            <select class="form__inputs form__inputs--select" name="form__hora" id="form__hora">
+                                <option class="form__options" value="">9:30</option>
+                                <option  class="form__options" value="">10:30</option>
+                                <option  class="form__options" value="">11:30</option>
+                                <option  class="form__options" value="">12:30</option>
+                                <option  class="form__options" value="">13:30</option>
+                                <option  class="form__options" value="">16:00</option>
+                                <option  class="form__options" value="">17:00</option>
+                                <option  class="form__options" value="">18:00</option>
+                                <option  class="form__options" value="">19:00</option>
+                            </select>
+                            <input class="form__button" type="submit" value="Pagar">
+                        </form>
+                        <div class="form__pago">
+                            <label for="total__pago" class="form__label">Total a pagar:</label>
+                            <p class="input__pago" id="total__pago"></p>
+                            <button class="calculo__pago" onclick="calcular__pago()">Calcular</button>
+                        </div>
                     </div>
+                    
+                   
                     <!-- </section>
                     <section class="info__alquiler background">
                         <img src="./img/icons/paddlesurf-icon.png" alt="" srcset="">

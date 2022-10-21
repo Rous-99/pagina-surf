@@ -40,13 +40,14 @@ function calcular__pago(){
             var precio=65*personas;
             document.getElementById('total__pago').innerHTML=precio;        
         }
-        else if (clase="5d"){
+        else if (clase=="5d"){
             var precio=100*personas;
-            document.getElementById('total__pago').innerHTML=precio; 
+            document.getElementById('total__pago').innerHTML=precio;
         }
         else{
-            // var mensaje="Opción incorrecta, revisa las opciones de clase para esta actividad"
-            document.getElementById('total__pago').innerHTML='JODER';
+            var mensaje="Opción incorrecta, revisa las opciones de clase para esta actividad"
+            document.getElementById('total__pago').innerHTML=mensaje;
+
         }
     }
     else if (actividad=="cata"){
@@ -62,13 +63,13 @@ function calcular__pago(){
             var precio=95*personas;
             document.getElementById('total__pago').innerHTML=precio;        
         }
-        else if (clase="5d"){
+        else if (clase=="5d"){
             var precio=125*personas;
             document.getElementById('total__pago').innerHTML=precio; 
         }
         else{
-            // var mensaje="Opción incorrecta, revisa las opciones de clase para esta actividad"
-            document.getElementById('total__pago').innerHTML='JODER';
+            var mensaje="Opción incorrecta, revisa las opciones de clase para esta actividad"
+            document.getElementById('total__pago').innerHTML=mensaje;
         }
     }
     else if (actividad=="paddle"){
@@ -84,13 +85,13 @@ function calcular__pago(){
             var precio=65*personas;
             document.getElementById('total__pago').innerHTML=precio;        
         }
-        else if (clase="5d"){
+        else if (clase=="5d"){
             var precio=80*personas;
             document.getElementById('total__pago').innerHTML=precio; 
         }
         else{
-            // var mensaje="Opción incorrecta, revisa las opciones de clase para esta actividad"
-            document.getElementById('total__pago').innerHTML='JODER';
+            var mensaje="Opción incorrecta, revisa las opciones de clase para esta actividad"
+            document.getElementById('total__pago').innerHTML=mensaje;
         }
     }
     else if (actividad=="wind"){
@@ -106,13 +107,13 @@ function calcular__pago(){
             var precio=70*personas;
             document.getElementById('total__pago').innerHTML=precio;        
         }
-        else if (clase="5d"){
+        else if (clase=="5d"){
             var precio=100*personas;
             document.getElementById('total__pago').innerHTML=precio; 
         }
         else{
-            // var mensaje="Opción incorrecta, revisa las opciones de clase para esta actividad"
-            document.getElementById('total__pago').innerHTML='JODER';
+            var mensaje="Opción incorrecta, revisa las opciones de clase para esta actividad"
+            document.getElementById('total__pago').innerHTML=mensaje;
         }
     }
     else if (actividad=="kayak"){
@@ -128,13 +129,13 @@ function calcular__pago(){
             var precio=35*personas;
             document.getElementById('total__pago').innerHTML=precio;        
         }
-        else if (clase="4h"){
+        else if (clase=="4h"){
             var precio=45*personas;
             document.getElementById('total__pago').innerHTML=precio; 
         }
         else{
-            // var mensaje="Opción incorrecta, revisa las opciones de clase para esta actividad"
-            document.getElementById('total__pago').innerHTML='JODER';
+            var mensaje="Opción incorrecta, revisa las opciones de clase para esta actividad"
+            document.getElementById('total__pago').innerHTML=mensaje;
         } 
     }
     else{
@@ -150,13 +151,13 @@ function calcular__pago(){
             var precio=75*personas;
             document.getElementById('total__pago').innerHTML=precio;        
         }
-        else if (clase="4di"){
+        else if (clase=="4di"){
             var precio=190*personas;
             document.getElementById('total__pago').innerHTML=precio; 
         }
         else{
-            // var mensaje="Opción incorrecta, revisa las opciones de clase para esta actividad"
-            document.getElementById('total__pago').innerHTML='JODER';
+            var mensaje="Opción incorrecta, revisa las opciones de clase para esta actividad"
+            document.getElementById('total__pago').innerHTML=mensaje;
         } 
     }
 

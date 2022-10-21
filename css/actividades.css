@@ -213,16 +213,15 @@ body{
 
 
 .info__types{
-    gap: 2rem;
+    height: 90%;
     width: 90%;
-    padding: 2rem;
-    /* background-color: #fedb3f; */
     display: flex;
     flex-direction: column;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    gap: 2rem;
+    margin: 1rem auto;
 }
 
 .title__link{
@@ -276,52 +275,58 @@ body{
     text-decoration: underline;
 }
 
-.info__alquiler--clases{
-    width: 700px;
-    height: 500px;
-} 
-
 .title__link--form{
     margin: 1rem auto;
     color: var(--cyan-fuerte-color);
 }
 
-.form__reservas{
-    margin: 0 auto;
-    width: 700px;
+.info__reservas{
+    width: 100%;
     height: max-content;
-    background-color:var(--nav-background);
-    /* outline: px solid var(--grey-color); */
+}
+
+
+.info__alquiler--clases{
+    height:max-content;
+    width: 90%;
+    margin: 0 auto;
+} 
+
+.form__container{
+    background-color: var(--nav-background);
+    box-shadow: 7px 13px 37px var(--grey-color);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form__reservas{
     display: flex;
     flex-direction: column;
-    box-shadow: 7px 13px 37px var(--grey-color);
-    text-align: center;
+    height: max-content;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form__label{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1rem auto;
 }
 
 .form__inputs{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
-    padding:15px;
     width: 80%;
+    margin: 0 auto;
+    padding: 8px;
     border-radius: 4px;
-    font-family: var(--main-text);
     border: 2px solid var(--cyan-fuerte-color);
     font-size: 1rem;
+    font-family:var(--main-text);
     text-align: center;
 }
 
-/* .form__inputs--select{
-    z-index: 1;
-    background-image: url(../img/icons/arrow-option.png);
-    background-repeat: no-repeat;
-    background-position: 100%;
-    background-size: 64px;
-
-} */
-
 .form__button{
-    margin: 2rem auto;
+    margin:1.5rem auto auto;
+    margin-bottom: .5rem;
     width: 80%;
     background-color: var(--cyan-fuerte-color);
     border: none;
@@ -331,27 +336,35 @@ body{
     cursor: pointer;
 }
 
-.form__label{
-    margin-top: 1rem;
-    font-weight: bold;
-    font-size: 1.2rem;
-}
-
 .form__pago{
-    margin: 1.5rem auto;
+    margin: .5rem auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: .7rem;
-    text-align: center;
+    gap: .2rem;
+    text-align: center;  
 }
 
 .input__pago{
-    border: 2px solid var(--cyan-fuerte-color);
-    width: 150px;
+    border: none;
+    width: 50%;
+    padding: 1rem; 
+}
+
+.calculo__pago{
+    background-color: var(--cyan-fuerte-color);
+    color: var(--white-color);
+    border: none;
     border-radius: 4px;
+    text-transform: uppercase;
     padding: .5rem;
+    font-weight: bold;
+    font-family: var(--main-text);
+    letter-spacing: .1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
 
 
 @media (min-width:1024px) {
@@ -429,5 +442,42 @@ body{
         grid-column: 2/3;
     }
 
+    .info__reservas{
+        margin: 2rem auto;
+        display: flex;
+        gap: 1rem;
+        width: 96%;
+        height: 900px;
+    } 
 
+    .form__container{
+        background-color: var(--nav-background);
+        box-shadow: 7px 13px 37px var(--grey-color);
+        width: 90%;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .form__reservas{
+        height:80%;
+    }
+
+    .title__link--form{
+        margin-bottom:0;
+    }
+
+    .form__label{
+        font-size: 1rem;
+        margin: .7rem auto;
+    }
+
+    .form__inputs{
+        padding: 5px;
+    }
+
+    .form__pago{
+        margin: 0;
+    }
+    
+    
 }
