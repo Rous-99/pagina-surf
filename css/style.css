@@ -38,15 +38,12 @@ body{
 }
 
 .container{
-    /* background-color: red; */
     max-width: 100vw;
     max-height: 100vh;
 }
 
 .hero{
-    /* background-color: #fedb3f; */
     height: 90px;
-    /* position: fixed; */
     width: 100%;
     padding-bottom: .7rem;
 }
@@ -71,7 +68,6 @@ body{
     text-align: center;
     display: flex;
     align-items: center;
-    /* background-color: gray; */
     font-size:1.5rem;
     text-transform: uppercase;
     color: var(--cyan-fuerte-color);
@@ -151,7 +147,6 @@ li:hover>ul{
 }
 
 .container__school{
-    /* background-color: #fedb3f; */
     height: 500px;
 }
 
@@ -190,7 +185,6 @@ li:hover>ul{
 }
 
 .info__activities{
-    /* background-color: #fedb3f; */
     max-width: 100%;
     text-align: center;
     padding-top: 1.5rem;
@@ -214,7 +208,6 @@ li:hover>ul{
 .container__classes{
     max-width: 100%;
     padding: 2rem;
-    /* background-color: green; */
 }
 
 .info__types{
@@ -260,7 +253,6 @@ li:hover>ul{
 }
 
 .info__experiencias{
-    /* background-color: aquamarine;* */
     height: 400px;
     padding-top: .7rem;
     padding-bottom: .7rem;
@@ -277,10 +269,6 @@ li:hover>ul{
     background-color: var(--cyan-color);
     text-align: center;
     color: var(--white-color);
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center; */
 }
 
 .footer__name{
@@ -316,7 +304,6 @@ li:hover>ul{
     color: var(--main-color);
 }
 
-/*AÑADIR TRANSICION A LOS ICONOS DE REDES SOCIALES*/
 
 
 .icon__whatsapp:hover{

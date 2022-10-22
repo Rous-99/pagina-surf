@@ -1,23 +1,17 @@
 
-/*Cuando hago click en la etiqueta hero__menu añado y quito la clase a nav para mostrar o no el menu*/
+
 
 const button=document.querySelector('.nav__button')
 const nav=document.querySelector('.nav__ul')
 
 
-// const pago=document.getElementById('total__pago').innerHTML=result
-
-// const surf=10
 
 button.addEventListener('click', ()=>{
     nav.classList.toggle('no-activo')
 })
 
 //creamos una función que me obtenga el valor de la actividad seleccionada cada vez que se cambie en el select
-function obtener__actividad(){
-    let actividad=document.getElementById('form__select').value;
-    return actividad
-}
+
 
 function calcular__pago(){
 
@@ -161,7 +155,5 @@ function calcular__pago(){
         } 
     }
 
-    console.log(actividad)
-    console.log(clase)
-    console.log(personas)
+    
 }
