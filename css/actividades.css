@@ -280,6 +280,8 @@ li:hover>ul{
 .container__extra{
     display: flex;
     width: 100%;
+    gap: .3rem;
+    height: 90%;
 }
 
 .alquiler__li{
@@ -288,6 +290,10 @@ li:hover>ul{
    font-weight: 400;
    color:black;
    font-weight: bold;
+}
+
+.alquiler__li--cata{
+    font-size: 1rem;
 }
 
 .material__link{
